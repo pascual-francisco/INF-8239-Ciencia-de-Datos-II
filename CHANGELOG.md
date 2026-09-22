@@ -23,3 +23,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unit test suite execution verified via `pytest -q` (**1 passed**).
 - Local virtual environment reproducibility and clean working tree confirmed (`git status`).
 - Successful push and synchronization of baseline state with GitHub remote repository.
+
+
+## 2026-09-21 - U01.LAB01
+
+### Added
+- Completed guided SVM laboratory using the Breast Cancer dataset.
+- Implemented a leakage-safe SVM pipeline with StandardScaler and SVC.
+- Added DummyClassifier baseline for model comparison.
+- Performed hyperparameter tuning with GridSearchCV and StratifiedKFold.
+- Evaluated model performance using F1-macro, ROC-AUC, and confusion matrix.
+- Added reusable build_svm() function in src/inf8239_u01/models.py.
+- Added pytest unit tests for model validation and pipeline structure.
+- Saved cross-validation results and trained model artifacts.
+
