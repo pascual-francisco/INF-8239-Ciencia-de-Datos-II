@@ -37,3 +37,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added pytest unit tests for model validation and pipeline structure.
 - Saved cross-validation results and trained model artifacts.
 
+
+
+## [1.0.0] - 2026-09-21
+
+### Added
+- Completed U01.LAB01 guided SVM laboratory.
