@@ -214,6 +214,7 @@ Exercise_01_Reproducible_SVM/
 ├── notebooks/
 │   ├── 00_verificacion.ipynb
 │   ├── 01_svm_guiada.ipynb
+│   ├── U01.01_reproducible.ipynb
 │   └── U01.LAB02.ipynb
 ├── reports/
 │   ├── dataset_comparison.md
