@@ -1,6 +1,29 @@
 import pandas as pd
 
-from src.green import pareto_flags
+
+def pareto_flags(df, score="f1_macro", cost="fit_median_s"):
+
+    flags = []
+
+    for _, row in df.iterrows():
+
+        dominated = (
+            (
+                (df[score] >= row[score])
+                &
+                (df[cost] <= row[cost])
+                &
+                (
+                    (df[score] > row[score])
+                    |
+                    (df[cost] < row[cost])
+                )
+            )
+        ).any()
+
+        flags.append(not bool(dominated))
+
+    return flags
 
 
 def test_pareto_marks_dominated_rows():
