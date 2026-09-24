@@ -2,6 +2,9 @@
 
 All notable changes to this repository will be documented in this file.
 
+## [1.3.0] - 2026-09-22
+- Added U01.LAB03 notebook
+
 ## [1.2.0] - 2026-09-22
 
 ### Added
