@@ -263,41 +263,104 @@ The principal Python dependencies include:
 
 # 10. Reproduction Instructions
 
-## 10.1 Clone the Public Repository
+The recommended method for reproducing Exercise 01 is to use the public
+submission notebook in Google Colab.
 
-No GitHub token is required because the repository is public.
+The reproducible notebook already contains the required setup cells, data
+download procedure, LAB01 baseline, LAB02 adaptation, automated tests, results,
+and conclusions.
 
-```bash
-git clone https://github.com/pascual-francisco/INF-8239-Ciencia-de-Datos-II.git
+The reviewer does not need to recreate the notebook manually.
+
+## 10.1 Open the Reproducible Notebook
+
+Open the following link in a web browser:
+
+https://colab.research.google.com/github/pascual-francisco/INF-8239-Ciencia-de-Datos-II/blob/main/Unit_01_Advanced_Data_Analysis/Exercise_01_Reproducible_SVM/notebooks/U01.01_reproducible.ipynb
+
+Google Colab will open the public notebook stored in the GitHub repository.
+
+The following options may appear at the top of Google Colab:
+
+```text
+Run all
+Copy to Drive
+Save in GitHub to keep changes
 ```
 
-## 10.2 Enter the Exercise Directory
+To reproduce the experiment, select:
 
-```bash
-cd INF-8239-Ciencia-de-Datos-II/Unit_01_Advanced_Data_Analysis/Exercise_01_Reproducible_SVM
+```text
+Runtime > Run all
 ```
 
-All commands should be executed from this directory.
+The reviewer does not need to select `Copy to Drive` or
+`Save in GitHub to keep changes`.
 
-## 10.3 Install the Dependencies
+Creating a personal Google Drive copy is optional and does not modify the
+original repository.
+
+## 10.2 Clone the Public Repository
+
+The first notebook cell clones a temporary copy of the public repository into
+the Google Colab virtual machine.
 
 ```bash
-python -m pip install -r requirements.txt
+%%bash
+
+# ==============================================================================
+# CELL 1: CLONE THE PUBLIC PROJECT REPOSITORY
+#
+# Objective:
+# 1. Clone the public GitHub repository into the Google Colab virtual machine.
+# 2. Make the source code, tests, documentation, and configuration files
+#    available for the reproducible execution of Exercise 01.
+# 3. Skip cloning if the repository already exists in the current runtime.
+#
+# Important:
+# - No Google Drive connection is required.
+# - No GitHub token is required.
+# - No collaborator access is required.
+# - This notebook does not perform commit, tag, or push operations.
+# ==============================================================================
+
+REPO_DIR="/content/INF-8239-Ciencia-de-Datos-II"
+REPO_URL="https://github.com/pascual-francisco/INF-8239-Ciencia-de-Datos-II.git"
+
+if [ -d "$REPO_DIR/.git" ]; then
+    echo "Repository already exists in the current Colab runtime."
+    echo "Clone operation skipped."
+    echo "Repository path: $REPO_DIR"
+else
+    cd /content || exit 1
+
+    echo "Cloning the public repository..."
+    git clone "$REPO_URL"
+
+    echo "Repository cloned successfully."
+    echo "Repository path: $REPO_DIR"
+fi
 ```
 
-If `ucimlrepo` is not available in the current environment, install it with:
+Expected output in a new runtime:
 
-```bash
-python -m pip install ucimlrepo
+```text
+Cloning the public repository...
+Cloning into 'INF-8239-Ciencia-de-Datos-II'...
+Repository cloned successfully.
+Repository path: /content/INF-8239-Ciencia-de-Datos-II
 ```
 
-In Google Colab:
+The repository is public, so no username, password, or GitHub token is
+required.
+
+## 10.3 Set the Project Working Directory
+
+The second notebook cell moves the Colab session to the Exercise 01 project
+directory.
 
 ```python
-%pip install -q ucimlrepo
-```
-
----
+# ===
 
 # 11. Reproducible Dataset Access
 
