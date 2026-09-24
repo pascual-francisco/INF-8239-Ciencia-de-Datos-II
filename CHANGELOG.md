@@ -4,6 +4,8 @@ All notable changes to this repository will be documented in this file.
 
 ## [1.4.0] - 2026-09-24
 
+
+
 ### Added
 - Added Green AI benchmarking workflow for U01.LAB03.
 - Added six model configurations:
