@@ -2,6 +2,33 @@
 
 All notable changes to this repository will be documented in this file.
 
+## [1.4.0] - 2026-09-24
+
+### Added
+- Added Green AI benchmarking workflow for U01.LAB03.
+- Added six model configurations:
+  - Logistic Regression
+  - SVM (C=1)
+  - SVM (C=10)
+  - Random Forest (100 trees)
+  - Random Forest (300 trees)
+  - Histogram Gradient Boosting
+- Added PCA dimensionality-reduction analysis.
+- Added t-SNE visualizations using two different random seeds.
+- Added Pareto frontier analysis for performance-cost trade-off evaluation.
+- Added serialized model size and inference-time benchmarking.
+- Added automated Pareto validation tests (`tests/test_green.py`).
+
+### Generated
+- Generated `reports/green_ai_results.csv`.
+- Generated `reports/figures/pareto.png`.
+- Generated `reports/figures/tsne_two_seeds.png`.
+- Generated serialized model artifacts under `reports/models/`.
+
+### Documentation
+- Added Green AI interpretation and model-selection discussion.
+- Added execution environment registration for reproducibility.
+
 ## [1.3.0] - 2026-09-22
 - Added U01.LAB03 notebook
 
