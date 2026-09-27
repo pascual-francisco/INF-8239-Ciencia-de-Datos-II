@@ -4,9 +4,14 @@ All notable changes to this repository will be documented in this file.
 
 ## [1.4.0] - 2026-09-24
 
-
-
 ### Added
+- Added additional Green AI visualization outputs under `reports/figures/`.
+- Added `model_comparison_f1.png` to compare F1 Macro performance across all evaluated models.
+- Added `training_time_comparison.png` to compare median training times.
+- Added `inference_time_comparison.png` to compare prediction latency across models.
+- Added `model_size_comparison.png` to compare serialized model sizes.
+- Added `green_ai_dashboard.png` consolidating F1, training time, inference time, and model size into a single report figure.
+- Preserved existing required figures (`pareto.png` and `tsne_two_seeds.png`) and organized all report visualizations in `reports/figures/`.
 - Added Green AI benchmarking workflow for U01.LAB03.
 - Added six model configurations:
   - Logistic Regression
