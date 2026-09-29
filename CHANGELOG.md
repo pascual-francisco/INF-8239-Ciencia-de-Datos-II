@@ -2,8 +2,20 @@
 
 All notable changes to this repository will be documented in this file.
 
-## [1.4.0] - 2026-09-24
+## [1.5.0] - 2026-09-24
+### Added
+- Created the folder structure for `Unit_02_Natural_Language_Processing/`:
+- `app/`
+- `data/raw/`
+- `data/processed/`
+- `docs/`
+- `notebooks/`
+- `reports/figures/`
+- `scripts/`
+- `src/`
+- `tests/`
 
+## [1.4.0] - 2026-09-24
 ### Added
 - Added additional Green AI visualization outputs under `reports/figures/`.
 - Added `model_comparison_f1.png` to compare F1 Macro performance across all evaluated models.
