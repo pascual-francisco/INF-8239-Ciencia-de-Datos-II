@@ -4,6 +4,7 @@ All notable changes to this repository will be documented in this file.
 
 ## [1.5.0] - 2026-09-24
 ### Added
+- Created the folder structures for the NLP and Computer Vision projects.
 - Created the folder structure for `Unit_02_Natural_Language_Processing/`:
 - `app/`
 - `data/raw/`
