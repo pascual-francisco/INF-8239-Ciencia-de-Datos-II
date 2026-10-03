@@ -1,6 +1,14 @@
 # Changelog
 
 All notable changes to this repository will be documented in this file.
+## [1.6.0] - 2026-10-24
+
+### Added
+- Added the approved Spanish sentiment corpus and documented the dataset selection criteria.
+- Added corpus download verification using SHA-256.
+- Added reconstruction and auditing of the encoded corpus.
+- Added a processed dataset containing positive, neutral, and negative sentiment classes.
+- Added automated data-contract tests, with all three tests passing.
 
 ## [1.5.0] - 2026-09-24
 ### Added

@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 
-from inf8239_u02.data import validate_dataframe
+from src.data import validate_dataframe
 
 
 def test_accepts_valid_dataframe():
