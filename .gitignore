@@ -4,3 +4,14 @@ __pycache__/
 .ipynb_checkpoints/
 data/raw/*
 !data/raw/.gitkeep
+
+# Local environment configuration inside any project
+**/.env
+
+# Downloaded raw datasets inside any project
+**/data/raw/*
+!**/data/raw/.gitkeep
+
+# Generated processed datasets inside any project
+**/data/processed/*
+!**/data/processed/.gitkeep

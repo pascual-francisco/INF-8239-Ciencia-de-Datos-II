@@ -4,11 +4,18 @@ All notable changes to this repository will be documented in this file.
 ## [1.6.0] - 2026-10-24
 
 ### Added
-- Added the approved Spanish sentiment corpus and documented the dataset selection criteria.
-- Added corpus download verification using SHA-256.
-- Added reconstruction and auditing of the encoded corpus.
-- Added a processed dataset containing positive, neutral, and negative sentiment classes.
-- Added automated data-contract tests, with all three tests passing.
+
+## [1.6.0] - 2026-10-24
+
+### Added
+- Added the complete LAB04 workflow for selecting, downloading, reconstructing, auditing, and validating a public Spanish sentiment corpus.
+- Added dataset candidate evaluation based on relevance, license, representativeness, quality, reproducibility, and risk.
+- Added SHA-256 verification for the downloaded corpus.
+- Added reconstruction of encoded reviews using the provided word dictionary and metadata.
+- Added a processed three-class dataset containing positive, neutral, and negative sentiment labels.
+- Added automated data-contract tests for required columns and non-empty text values.
+- Added dataset documentation, audit results, and Colab portability configuration.
+- Updated the repository-level `.gitignore` to exclude local `.env` files and raw and processed datasets from nested projects.
 
 ## [1.5.0] - 2026-09-24
 ### Added
