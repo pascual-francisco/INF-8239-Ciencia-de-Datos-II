@@ -8,8 +8,8 @@ import networkx as nx
 import pandas as pd
 from gensim.models import Word2Vec
 
-from inf8239_u02.config import ROOT, settings
-from inf8239_u02.data import load_dataset
+from src.config import ROOT, settings
+from src.data import load_dataset
 
 
 def tokenize(value: str) -> list[str]:

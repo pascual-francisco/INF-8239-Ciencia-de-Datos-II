@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from .config import settings
+from src.config import settings
 
 
 def sha256(path: Path) -> str:

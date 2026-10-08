@@ -5,8 +5,8 @@ from pathlib import Path
 
 import requests
 
-from inf8239_u02.config import ROOT, settings
-from inf8239_u02.data import sha256
+from src.config import ROOT, settings
+from src.data import sha256
 
 
 def main() -> int:
