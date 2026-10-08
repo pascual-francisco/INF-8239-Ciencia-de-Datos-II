@@ -1,4 +1,4 @@
-from inf8239_u02.modeling import build_models
+from src.modeling import build_models
 
 
 def test_each_pipeline_predicts_one_label():
