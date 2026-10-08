@@ -1,11 +1,22 @@
 # Changelog
-
-All notable changes to this repository will be documented in this file.
-## [1.6.0] - 2026-10-24
+## [1.7.0] - 2026-10-07
 
 ### Added
+- Added TF-IDF pipelines using DummyClassifier, Complement Naive Bayes, and Logistic Regression.
+- Added model metrics, confusion matrix, error analysis, and a reusable Joblib pipeline.
+- Added automated model tests and an interactive Streamlit sentiment application.
+- Added cloud-compatible dependencies through `requirements-cloud.txt`.
 
-## [1.6.0] - 2026-10-24
+### Changed
+- Updated project imports to use the existing `src` package.
+- Updated Exercise 03 documentation to integrate LAB04 and LAB05.
+
+### Validated
+- Verified model prediction and pipeline persistence.
+- Verified that the Streamlit application starts successfully in a clean environment.
+
+All notable changes to this repository will be documented in this file.
+## [1.6.0] - 2026-10-02
 
 ### Added
 - Added the complete LAB04 workflow for selecting, downloading, reconstructing, auditing, and validating a public Spanish sentiment corpus.
