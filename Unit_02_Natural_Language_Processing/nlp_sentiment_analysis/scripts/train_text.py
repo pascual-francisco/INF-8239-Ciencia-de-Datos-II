@@ -8,9 +8,9 @@ import pandas as pd
 from sklearn.metrics import ConfusionMatrixDisplay, classification_report, f1_score
 from sklearn.model_selection import train_test_split
 
-from inf8239_u02.config import ROOT, settings
-from inf8239_u02.data import load_dataset, validate_dataframe
-from inf8239_u02.modeling import build_models
+from src.config import ROOT, settings
+from src.data import load_dataset, validate_dataframe
+from src.modeling import build_models
 
 
 def main() -> None:
