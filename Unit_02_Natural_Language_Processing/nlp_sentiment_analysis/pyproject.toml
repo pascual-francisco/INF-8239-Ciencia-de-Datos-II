@@ -30,7 +30,7 @@ packages = ["src/inf8239_u02"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src", "."]
-testpaths = ["tests"]
+testpaths = ["test"]
 addopts = "-ra"
 
 [tool.ruff]

@@ -1,7 +1,16 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 import argparse
 import re
+
+
+import matplotlib
+matplotlib.use("Agg")
 
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -23,7 +32,7 @@ def main() -> None:
     args = parser.parse_args()
     df = load_dataset()
     sentences = [tokenize(value) for value in df[settings.text_column].dropna()]
-    model = Word2Vec(sentences, vector_size=60, window=5, min_count=1, workers=1, seed=42, epochs=30)
+    model = Word2Vec(sentences, vector_size=60, window=10, min_count=1, workers=1, seed=42, epochs=30)
     (ROOT / "models").mkdir(exist_ok=True)
     (ROOT / "reports").mkdir(exist_ok=True)
     model.save(str(ROOT / "models/word2vec.model"))

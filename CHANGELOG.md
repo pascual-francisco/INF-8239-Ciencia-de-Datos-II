@@ -2,7 +2,8 @@
 
 ## [1.7.0] - 2026-10-07
 ### Added
-- Completed LAB 01.
+- Completed LAB 06.
+- Completed DEMO 01.
 - Added TF-IDF pipelines using DummyClassifier, Complement Naive Bayes, and Logistic Regression.
 - Added model metrics, confusion matrix, error analysis, and a reusable Joblib pipeline.
 - Added automated model tests and an interactive Streamlit sentiment application.
