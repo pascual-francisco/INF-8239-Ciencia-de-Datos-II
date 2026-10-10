@@ -2,13 +2,29 @@
   "dense": {
     "f1_macro": 0.8638198983435794,
     "parameters": 50890,
-    "train_seconds": 11.792026869000097,
-    "inference_ms_per_image": 0.0636961900000074
+    "train_seconds": 11.001232359999904,
+    "inference_runs_ms_per_image": [
+      0.06114167470000211,
+      0.06830452989997866,
+      0.08899402970000665,
+      0.0805642847999934,
+      0.07592859980004504
+    ],
+    "inference_ms_per_image": 0.07498662378000517,
+    "inference_std_ms_per_image": 0.009638859222265716
   },
   "cnn": {
     "f1_macro": 0.7889547676254809,
     "parameters": 19466,
-    "train_seconds": 416.67406204200006,
-    "inference_ms_per_image": 0.26365164339999864
+    "train_seconds": 371.0403982749999,
+    "inference_runs_ms_per_image": [
+      0.2529214916000001,
+      0.24795671050001147,
+      0.520036795299984,
+      0.2359958617999837,
+      0.23861356949996662
+    ],
+    "inference_ms_per_image": 0.2991048857399892,
+    "inference_std_ms_per_image": 0.1106362496016612
   }
 }
