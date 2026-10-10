@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## [1.8.0] - 2026-10-07
 ### Added
 - Completed DEMO 02.
