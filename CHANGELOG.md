@@ -1,8 +1,11 @@
 # Changelog
 
+## [1.9.0] - 2026-10-11
+### Added
+- Start DEMO 03.
+
 ## [1.8.0] - 2026-10-07
 ### Added
-- Completed LAB07.
 - Completed DEMO 02.
 
 ## [1.7.0] - 2026-10-07
