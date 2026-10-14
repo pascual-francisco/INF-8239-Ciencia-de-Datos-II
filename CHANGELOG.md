@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.11.0] - 2026-10-14
+### Added
+-Completed LAB10.
+
 ## [1.10.0] - 2026-10-12
 ### Added
 - Start LAB10.
