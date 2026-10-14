@@ -2,6 +2,7 @@
 
 ## [1.10.0] - 2026-10-12
 ### Added
+- Start LAB10.
 - Completed LAB08.
 - Completed LAB09.
 
