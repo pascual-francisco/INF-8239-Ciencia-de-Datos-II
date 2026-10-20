@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.12.0] - 2026-10-19
+### Added
+-Completed LAB11.
+
 ## [1.11.0] - 2026-10-14
 ### Added
 -Completed LAB10.
