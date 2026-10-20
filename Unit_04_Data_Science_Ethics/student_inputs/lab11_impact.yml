@@ -1,9 +1,17 @@
-purpose: REPLACE
-assisted_decision: REPLACE
-users: REPLACE
-affected_population: REPLACE
-owner: REPLACE
-non_predictive_alternative: REPLACE
-out_of_scope_use: REPLACE
-withdrawal_condition: REPLACE
-appeal_mechanism: REPLACE
+purpose: Priorizar territorios para intervenciones preventivas y asignación eficiente de recursos públicos.
+
+assisted_decision: Identificar territorios que requieren atención prioritaria según el nivel de riesgo estimado.
+
+users: Analistas de datos, gestores territoriales y responsables de planificación.
+
+affected_population: Residentes de los territorios evaluados mediante el sistema.
+
+owner: Departamento de Planificación Territorial.
+
+non_predictive_alternative: Aplicar criterios definidos por expertos y revisiones periódicas sin utilizar modelos predictivos.
+
+out_of_scope_use: No utilizar para decisiones individuales relacionadas con empleo, beneficios, sanciones o acceso a servicios esenciales.
+
+withdrawal_condition: Retirar el sistema si se detectan sesgos significativos, incumplimientos regulatorios o una degradación sostenida del desempeño.
+
+appeal_mechanism: Toda recomendación puede ser revisada por un comité humano mediante un proceso formal de apelación y revisión documental.

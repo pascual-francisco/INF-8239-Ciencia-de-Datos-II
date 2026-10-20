@@ -1,0 +1,9 @@
+id,scenario,affected,likelihood_1_4,impact_1_4,control,owner,evidence,residual,priority
+R02,Clasificación incorrecta de territorios prioritarios,Personas afectadas,3,3,Revisión humana antes de la decisión final,Operator,Registros de validación,medium,9
+R01,Sesgo sistemático en la clasificación de territorios,Personas afectadas,2,4,Auditorías periódicas de equidad,Data Team,Reporte de fairness trimestral,high,8
+R07,Dependencia excesiva de recomendaciones automatizadas,Operator,2,4,Revisión humana obligatoria,Operator,Procedimiento documentado,high,8
+R03,Uso de datos desactualizados para generar recomendaciones,Institutional owner,2,3,Actualización periódica del conjunto de datos,Data Team,Bitácora de actualización,medium,6
+R06,Uso del sistema fuera de su propósito autorizado,Institutional owner,3,2,Políticas de uso y supervisión,Institutional owner,Política aprobada y comunicada,medium,6
+R04,Acceso no autorizado a información sensible,Personas afectadas,1,4,Controles de acceso y cifrado,Institutional owner,Registros de auditoría,medium,4
+R05,Interpretación incorrecta de resultados por los operadores,Operator,2,2,Capacitación obligatoria y documentación,Institutional owner,Registros de entrenamiento,low,4
+R08,Incumplimiento regulatorio por cambios normativos,Institutional owner,1,3,Revisión periódica de cumplimiento,Institutional owner,Informe de cumplimiento regulatorio,low,3
