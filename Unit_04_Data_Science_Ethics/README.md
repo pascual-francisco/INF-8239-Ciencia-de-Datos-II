@@ -1,7 +1,5 @@
 # INF-8239 · Unidad 04 · Gobernanza y DSS responsable
 
-# INF-8239 Ciencia de Datos II
-# Unidad 04 – Ética y Roles en Ciencia de Datos
 ## LAB11 – Evaluación de Impacto Ético
 ## LAB12 – Auditoría de Equidad con Fairlearn
 
