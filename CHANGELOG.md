@@ -3,6 +3,7 @@
 ## [1.12.0] - 2026-10-19
 ### Added
 -Completed LAB11.
+-Completed LAB12.
 
 ## [1.11.0] - 2026-10-14
 ### Added
