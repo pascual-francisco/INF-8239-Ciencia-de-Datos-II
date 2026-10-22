@@ -356,3 +356,87 @@ Se utilizaron herramientas de inteligencia artificial generativa como apoyo para
 Todas las decisiones, interpretaciones, análisis de riesgos, verificaciones de resultados, selección de controles, comparación de modelos y conclusiones finales fueron revisadas y validadas manualmente por el estudiante antes de la entrega.
 
 Ninguna evidencia experimental, métrica, resultado o conclusión fue inventada ni utilizada sin verificación previa.
+
+Sí. Te recomiendo integrarlo en ese mismo documento en lugar de tener otro informe separado. Solo añadiría las secciones de LAB13 después de "Decisión Final" y antes de "Reproducción del Proyecto y Evidencias".
+
+LAB13 – Gobernanza y DSS Responsable
+Matriz RACI
+
+Como parte de la gobernanza del DSS se definieron responsabilidades mediante una matriz RACI para asegurar la trazabilidad de las decisiones y la separación entre ejecución técnica y aprobación organizacional.
+
+La calidad de los datos quedó bajo responsabilidad del Data Engineer, mientras que la aprobación final corresponde al Product Owner. La validación del modelo quedó asignada al Data Scientist con aprobación del Product Owner. El despliegue es responsabilidad del ML Engineer, manteniendo al Product Owner como responsable final de la liberación.
+
+La respuesta ante incidentes quedó bajo la ejecución del ML Engineer y la responsabilidad final del Institutional Owner. Esta estructura garantiza que cada actividad cuente con exactamente un responsable final (Accountable) y al menos un ejecutor directo (Responsible).
+
+Política de Gobernanza
+
+El sistema fue configurado mediante una política formal de gobernanza que establece límites de uso, controles de privacidad y puertas de calidad para el despliegue.
+
+Los usos prohibidos incluyen intervenciones automáticas, decisiones de elegibilidad y declaraciones de emergencia. Asimismo, el sistema reconoce como atributos sensibles las variables protected_group y age_band, utilizadas únicamente para auditoría de equidad.
+
+Se definieron umbrales mínimos para desempeño y equidad, incluyendo un recall mínimo de 0.68, una brecha máxima de recall de 0.16, una brecha máxima de FPR de 0.16, una latencia máxima de 500 ms y un tamaño máximo de modelo de 1024 KB.
+
+Estas condiciones constituyen las puertas de gobernanza que deben superarse antes de autorizar cualquier despliegue.
+
+Resultado de la Evaluación de Gobernanza
+
+Se ejecutó el pipeline de gobernanza para validar desempeño, equidad, latencia y eficiencia computacional utilizando las puertas definidas en la política del sistema.
+
+El resultado final fue GO, indicando que todas las verificaciones fueron aprobadas satisfactoriamente. El modelo cumplió con el recall mínimo requerido, mantuvo las brechas de equidad dentro de los límites permitidos y permaneció muy por debajo del tamaño máximo autorizado.
+
+No se registraron verificaciones fallidas durante la evaluación. Sin embargo, la gobernanza mantiene la necesidad de una revisión humana final antes de cualquier despliegue operativo.
+
+Arquitectura del DSS Gobernado
+
+La arquitectura implementada se compone de seis capas principales.
+
+La capa de datos es responsable de validar contratos de datos, procedencia, exclusión de identificadores directos y control del corte temporal. La capa de modelo proporciona predicciones reproducibles mediante Logistic Regression como alternativa seleccionada.
+
+La capa de equidad evalúa métricas desagregadas por grupos protegidos e intersecciones utilizando Fairlearn. Para los grupos con soporte reducido se documentaron advertencias específicas para evitar interpretaciones incorrectas.
+
+La capa Green AI justifica la elección del modelo mediante una comparación entre calidad predictiva, complejidad computacional, tiempo de entrenamiento y tamaño serializado.
+
+La capa DSS transforma las predicciones en recomendaciones explicables para revisión humana, proporcionando evidencia, métricas y criterios de decisión.
+
+Finalmente, la capa de gobernanza integra responsables, monitoreo, auditorías, mecanismos de apelación, respuesta a incidentes y procedimientos de despliegue controlado.
+
+Simulacro de Incidente
+
+Se ejecutó un simulacro de incidente para validar la capacidad de respuesta del DSS ante una desviación de equidad.
+
+El escenario simulado correspondió a una brecha de recall superior al límite permitido. La condición fue detectada mediante los mecanismos de monitoreo y generó una recomendación de tipo REVIEW manteniendo disponible un baseline seguro.
+
+Como parte de la contención se preservaron reportes, métricas y versiones del modelo para permitir la investigación posterior. La comunicación fue dirigida al Product Owner, ML Engineer e Institutional Owner siguiendo la matriz RACI definida para el proyecto.
+
+Posteriormente se documentaron acciones correctivas orientadas a revisar métricas de equidad, revalidar las puertas de gobernanza y actualizar la documentación asociada. El simulacro confirmó la disponibilidad de procedimientos formales para detección, contención, preservación de evidencia, comunicación, rollback y análisis posterior.
+
+Model Card y Runbook
+
+Se elaboró un Model Card para documentar el propósito del modelo, usuarios previstos, métricas de desempeño, resultados de equidad, riesgos identificados, limitaciones conocidas y mecanismos de supervisión humana.
+
+Adicionalmente se desarrolló un Runbook que describe los procedimientos de respuesta ante incidentes, incluyendo clasificación, comunicación, contención, recuperación, rollback y postmortem. Ambos documentos constituyen artefactos de gobernanza necesarios para auditorías y revisiones posteriores.
+
+Validación Final del DSS
+
+Como etapa final se ejecutó la batería completa de pruebas del proyecto.
+
+Las pruebas incluyeron validaciones de contratos de datos, privacidad, equidad, gobernanza, DSS y funcionamiento de Streamlit sin navegador.
+
+El resultado obtenido fue:
+
+10 passed in 6.69s
+
+
+Este resultado confirma que el sistema cumple los requisitos técnicos y de gobernanza definidos para la Unidad 04.
+
+Decisión Final Integrada
+
+Considerando los resultados obtenidos en LAB11, LAB12 y LAB13, se recomienda desplegar el DSS con controles y monitoreo continuo.
+
+La evaluación de impacto identificó riesgos gestionables mediante controles documentados. La auditoría de equidad mostró un desempeño global aceptable y diferencias entre grupos que deben mantenerse bajo monitoreo. Las puertas de gobernanza fueron aprobadas satisfactoriamente y el simulacro de incidente validó la capacidad de respuesta del sistema.
+
+El DSS mantiene explícitamente la supervisión humana obligatoria, el monitoreo continuo de métricas, auditorías periódicas y mecanismos documentados para respuesta ante incidentes. Estas condiciones permiten un uso responsable del sistema dentro del alcance definido para el proyecto.
+
+
+
+
